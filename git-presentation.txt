@@ -1,0 +1,64 @@
+
+
+Git Notes:
+
+
+1.8.1.3 - client
+
+Git doesn't care about differences between client and server versions
+
+
+Hub is another tool
+Meld - diff management tool
+
+
+
+Make sure you set up your git environment
+git config --global …
+
+gitk or gitx - guy to show all commits and their relationships to each other, to branches, tags, etc. etc.
+
+git blame {file-name}
+	Will show you all commits against the file and each line will have a change that you can go view
+
+
+workspace / working file set ->
+git index ->
+git (local) repo ->
+
+
+
+First thing when working with another repo / remote / you don't own
+
+	FORK THE REPO FIRST
+	Then clone the repo
+	git remote add upstream
+
+	(git diff - your local repository changes)
+	(git add --interactive - lets you get very granular with your commits)
+	(git diff --cached - diff against what is in your index)
+	(git commit -v - move stuff from your index to the local repository)
+	(git reset {commit UUID} - revert to the commit version specified)
+	(git reset --hard {commit UUID} - reverts to the previous version AND overwrites your local workspace)
+	(git branch foo - create a branch)
+	(git checkout foo - checkout the branch)
+	(git push origin foo - push the local copy in to branch foo)
+	(git push --set-upstream origin foo - tie the local repo to the private copy of our remote repo)
+	(hub pull-request -b {account}:master})
+	(hub pull-request -i {issue-number} -b {account}:master} - attach your pull request to a specific issue number)
+	(git checkout master - switch to the master branch)
+	(git remote update - look for any upstream changes to master)
+	(git merge upstream/master - take the upstream master branch and merge it with your master copy)
+	(git branch -d foo = 
+	(git push origin --delete foo 
+	(git push 
+	(git branch revert
+	(git checkout revert
+	(git revert {change UUID} - remove a change you have made to the upstream repo)
+	(git rebase --interactive master - allows you to consolidate any change/ remove /un-do /re-do type of bloat in the repo)
+	
+	
+
+
+
+	
